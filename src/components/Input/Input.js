@@ -22,7 +22,7 @@ export default class Input extends Component{
                         }
                         user.push(userInserted)
                         console.log(user)
-                    } }>Registrar
+                    }}>Cadastrar
                         <i className="material-icons right">send</i>
                     </button>
                 </div>
