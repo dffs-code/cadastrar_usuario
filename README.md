@@ -1,3 +1,7 @@
+## Projeto React de Cadastro
+
+Projeto de cadastro de usuário, com armazenamento em memória, sem banco de dados.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

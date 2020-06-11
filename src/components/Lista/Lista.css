@@ -1,7 +1,41 @@
 .input{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+    justify-content: center;
+    text-align: center;
+}
+.lista{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 50px;	
+    text-align: center;
     width: 250px;
 }
-label{
-    color: dimgrey;
+thead{
+    font-weight: bolder;
+}
+th{
+    font-weight: lighter;
+}
+.edit, .delete{
+    border-radius: 50%;
+}
+.edit:hover, .delete:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.edit:active, .delete:active,
+.edit:focus, .delete:focus{
+    background-color: grey;
+}
+label, label.focus{ 
+    color: whitesmoke;
     font-size: 25px;
 }

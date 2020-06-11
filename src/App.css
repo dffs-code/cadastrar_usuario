@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
 
 * {
   padding:0;
@@ -8,4 +6,15 @@
   vertical-align:baseline;
   list-style:none;
   border:0
-  }
+}
+
+body {
+  background-color: #404040; 
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+}
+
+.main {
+  justify-content: center;
+  text-align: center;
+}
