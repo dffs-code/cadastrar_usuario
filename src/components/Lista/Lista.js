@@ -59,6 +59,7 @@ export default class Lista extends Component{
                 }}>Cadastrar
                     <i className="material-icons right">send</i>
                 </button>
+                
             </div>
             <div className='lista z-depth-2'>
               <table>
@@ -74,6 +75,16 @@ export default class Lista extends Component{
                 </tbody>
               </table>
             </div>
+            <button className='btn waves-effect waves-light export' type='submit' name='action' onClick={() => {
+                  const json = JSON.stringify(user, null, '\t');
+                  var blob = new Blob([json], { type: 'application/pdf' });
+                  var anchor = document.createElement('a');
+                  
+                  anchor.download = "export.txt";
+                  anchor.href = (window.webkitURL || window.URL).createObjectURL(blob);
+                  anchor.dataset.downloadurl = ['text/plain', anchor.download, anchor.href].join(':');
+                  anchor.click();
+                }}>Exportar</button>
           </div>
 
       )
